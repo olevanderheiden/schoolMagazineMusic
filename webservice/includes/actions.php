@@ -2,33 +2,68 @@
 /**
  * @return array
  */
-function getDishes()
+function getMusic()
 {
     return [
         [
             "id" => 1,
-            "name" => "Pizza",
-            "kitchen" => "Italian",
+            "name" => "Ashita Eno Kisesiki",
+            "file" => "tcs4Op",
         ],
         [
             "id" => 2,
-            "name" => "Kale",
-            "kitchen" => "Dutch",
+            "name" => "Changing World From the Abyss",
+            "file" => "tcs4Op2",
         ],
         [
             "id" => 3,
-            "name" => "Lasagna",
-            "kitchen" => "Italian",
+            "name" => "Beyond Ten Millions of Nights",
+            "file" => "tcs4Concert",
         ],
         [
             "id" => 4,
-            "name" => "Kebab",
-            "kitchen" => "Turkish",
+            "name" => "Ai No Ulta",
+            "file" => "tcs4Ed",
         ],
         [
             "id" => 5,
-            "name" => "Paella",
-            "kitchen" => "Spanish",
+            "name" => "Nayuta No Hoshi No Monogata",
+            "file" => "nayutaOp",
+        ],
+        [
+            "id" => 6,
+            "name" => "The Door to Adventure",
+            "file" => "nayutaOp2",
+        ],
+        [
+            "id" => 7,
+            "name" => "Beyond the Everlasting Time",
+            "file" => "nayutaMainMenu",
+        ],
+        [
+            "id" => 8,
+            "name" => "Nayuta No OmoiKanako Kotera",
+            "file" => "nayutaEd",
+        ],
+        [
+            "id" => 9,
+            "name" => "Twilight's Ingress",
+            "file" => "monarkMainMenu",
+        ],
+        [
+            "id" => 10,
+            "name" => "Nihil",
+            "file" => "monarkOp",
+        ],
+        [
+            "id" => 11,
+            "name" => "Your Hope, Your Wish",
+            "file" => "monarkEd",
+        ],
+        [
+            "id" => 12,
+            "name" => "Greed",
+            "file" => "monarkGreed",
         ]
     ];
 }
@@ -37,29 +72,57 @@ function getDishes()
  * @param $id
  * @return mixed
  */
-function getDishDetails($id)
+function getDetails($id)
 {
     $tags = [
         1 => [
-            "recipe" => "Put it in the oven and go!",
-            "tags" => ['cheese', 'oven']
+            "fileSize" => "12.4 MB",
+            "Artist" => ["Falcom Sound Team Jdk"]
         ],
         2 => [
-            "recipe" => "You can make this delicious Dutch meal by ...",
-            "tags" => ['unox', 'healthy', 'stamppot', 'boerenkool']
+            "fileSize" => "5.55 MB",
+            "Artist" => ["Falcom Sound Team Jdk"]
         ],
         3 => [
-            "recipe" => "Very nice when your grandma prepares this meal",
-            "tags" => ['omnomnom']
+            "fileSize" => "7.89 MB",
+            "Artist" => ["Falcom Sound Team Jdk"]
         ],
         4 => [
-            "recipe" => "Everytime in the city after midnight",
-            "tags" => ['kapsalon', 'tasty', 'meat']
+            "fileSize" => "15.2 MB",
+            "Artist" => ["Falcom Sound Team Jdk"]
         ],
         5 => [
-            "recipe" => "Specialty when on holiday in Spain",
-            "tags" => ['fish']
+            "fileSize" => "5.00 MB",
+            "Artist" => ["Falcom Sound Team Jdk"]
         ],
+        6 => [
+            "fileSize" => "4.85 MB",
+            "Artist" => ["Falcom Sound Team Jdk"]
+        ],
+        7 => [
+            "fileSize" => "4.71 MB",
+            "Artist" => ["Falcom Sound Team Jdk"]
+        ],
+        8 => [
+            "recipe" => "10.7 MB",
+            "Artist" => ["Falcom Sound Team Jdk"]
+        ],
+        9 => [
+            "recipe" => "6.46 MB",
+            "Artist" => ["Furyu Sound Team"]
+        ],
+        10 => [
+            "recipe" => "3.64 MB",
+            "Artist" => ["KAF"]
+        ],
+        11 => [
+            "recipe" => "4.34 MB",
+            "Artist" => ["CIEL"]
+        ],
+        12 => [
+            "recipe" => "5.17 MB",
+            "Artist" => ["KOKO"]
+        ]
     ];
 
     return $tags[$id];
