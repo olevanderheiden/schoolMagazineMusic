@@ -1,0 +1,56 @@
+header {
+    text-align: left;
+    display: flex;
+    width: 100%;
+    border: antiquewhite;
+    background-color: aliceblue;
+}
+
+#logo {
+    width: 30%;
+    height: 20%;
+}
+
+h1 {
+    margin-top: 10%;
+}
+
+#navBar {
+    display: flex;
+    padding: 5%;
+    margin: 6%;
+    width: 25%;
+}
+
+.button{
+    background-color: antiquewhite;
+    margin: 30px;
+    border: bisque;
+}
+
+.buttonRow{
+    display: flex;
+    width: 100%;
+}
+
+.button:hover{
+    background-color: black;
+    width: 10%;
+}
+.button a{
+    font-size: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.button a:hover{
+    display: flex;
+    width: 50%;
+    color: antiquewhite;
+}
+
+.warning
+{
+    background-color: brown;
+    color: black;
+}
