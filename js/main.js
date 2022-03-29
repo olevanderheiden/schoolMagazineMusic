@@ -2,11 +2,12 @@ window.addEventListener('load', init);
 let musicPlayer;
 let apiUrl = './webservice';
 let musicLibrary;
+let musicRow;
 
 
 function init() {
     getMusic(apiUrl, getMusicSuccessHandler)
-    let musicRow = document.getElementById('musicRow');
+    musicRow = document.getElementById('musicRow');
     let musicItem = document.getElementsByClassName('musicButton');
     //Add event listener to all items
     for (let i = 0; i < musicItem.length; i++) {
@@ -24,7 +25,7 @@ function getMusic(url, successfulFunction) {
             return response.json()
         })
         .then(successfulFunction)
-        .catch(getStoresErrorHandler)
+        .catch(getMusicErrorHandler)
 }
 
 function getMusicSuccessHandler(data) {
@@ -38,10 +39,15 @@ function createMusicLibrary()
     for (let music of musicLibrary)
     {
         console.log(music);
+        let musicObject = document.createElement('img');
+        musicObject.src = `images/${music.id}.png`;
+        musicObject.id = `${music.id}`;
+        musicObject.classList.add("musicButton");
+        musicRow.appendChild(musicObject);
     }
 }
 
-function getStoresErrorHandler(data) {
+function getMusicErrorHandler(data) {
     console.error(data)
 }
 
