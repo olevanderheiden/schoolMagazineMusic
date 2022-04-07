@@ -8,62 +8,62 @@ function getMusic()
         [
             "id" => 1,
             "name" => "Ashita Eno Kisesiki",
-            "file" => "tcs4Op",
+            "fileSource" => "tcs4Op",
         ],
         [
             "id" => 2,
             "name" => "Changing World From the Abyss",
-            "file" => "tcs4Op2",
+            "fileSource" => "tcs4Op2",
         ],
         [
             "id" => 3,
             "name" => "Beyond Ten Millions of Nights",
-            "file" => "tcs4Concert",
+            "fileSource" => "tcs4Concert",
         ],
         [
             "id" => 4,
             "name" => "Ai No Ulta",
-            "file" => "tcs4Ed",
+            "fileSource" => "tcs4Ed",
         ],
         [
             "id" => 5,
             "name" => "Nayuta No Hoshi No Monogata",
-            "file" => "nayutaOp",
+            "fileSource" => "nayutaOp",
         ],
         [
             "id" => 6,
             "name" => "The Door to Adventure",
-            "file" => "nayutaOp2",
+            "fileSource" => "nayutaOp2",
         ],
         [
             "id" => 7,
             "name" => "Beyond the Everlasting Time",
-            "file" => "nayutaMainMenu",
+            "fileSource" => "nayutaMainMenu",
         ],
         [
             "id" => 8,
             "name" => "Nayuta No OmoiKanako Kotera",
-            "file" => "nayutaEd",
+            "fileSource" => "nayutaEd",
         ],
         [
             "id" => 9,
             "name" => "Twilight's Ingress",
-            "file" => "monarkMainMenu",
+            "fileSource" => "monarkMainMenu",
         ],
         [
             "id" => 10,
             "name" => "Nihil",
-            "file" => "monarkOp",
+            "fileSource" => "monarkOp",
         ],
         [
             "id" => 11,
             "name" => "Your Hope, Your Wish",
-            "file" => "monarkEd",
+            "fileSource" => "monarkEd",
         ],
         [
             "id" => 12,
             "name" => "Greed",
-            "file" => "monarkGreed",
+            "fileSource" => "monarkGreed",
         ]
     ];
 }
@@ -76,52 +76,65 @@ function getDetails($id)
 {
     $tags = [
         1 => [
-            "fileSize" => "12.4 MB",
-            "Artist" => ["Falcom Sound Team Jdk"]
+            "fileSourceSize" => "12.4 MB",
+            "Artist" => ["Falcom Sound Team Jdk"],
+            "fileSource" => "tcs4Op"
         ],
         2 => [
-            "fileSize" => "5.55 MB",
-            "Artist" => ["Falcom Sound Team Jdk"]
+            "fileSourceSize" => "5.55 MB",
+            "Artist" => ["Falcom Sound Team Jdk"],
+            "fileSource" => "tcs4Op2"
         ],
         3 => [
-            "fileSize" => "7.89 MB",
-            "Artist" => ["Falcom Sound Team Jdk"]
+            "fileSourceSize" => "7.89 MB",
+            "Artist" => ["Falcom Sound Team Jdk"],
+            "fileSource" => "tcs4Concert"
         ],
         4 => [
-            "fileSize" => "15.2 MB",
-            "Artist" => ["Falcom Sound Team Jdk"]
+            "fileSourceSize" => "15.2 MB",
+            "Artist" => ["Falcom Sound Team Jdk"],
+            "fileSource" => "tcs4Ed"
         ],
         5 => [
-            "fileSize" => "5.00 MB",
-            "Artist" => ["Falcom Sound Team Jdk"]
+            "fileSourceSize" => "5.00 MB",
+            "Artist" => ["Falcom Sound Team Jdk"],
+            "fileSource" => "nayutaOp"
         ],
         6 => [
-            "fileSize" => "4.85 MB",
-            "Artist" => ["Falcom Sound Team Jdk"]
+            "fileSourceSize" => "4.85 MB",
+            "Artist" => ["Falcom Sound Team Jdk"],
+            "fileSource" => "nayutaOp2"
         ],
         7 => [
-            "fileSize" => "4.71 MB",
-            "Artist" => ["Falcom Sound Team Jdk"]
+            "fileSourceSize" => "4.71 MB",
+            "Artist" => ["Falcom Sound Team Jdk"],
+            "fileSource" => "nayutaMainMenu"
         ],
         8 => [
             "recipe" => "10.7 MB",
-            "Artist" => ["Falcom Sound Team Jdk"]
+            "Artist" => ["Falcom Sound Team Jdk"],
+            "fileSource" => "nayutaEd"
         ],
         9 => [
             "recipe" => "6.46 MB",
-            "Artist" => ["Furyu Sound Team"]
+            "Artist" => ["Furyu Sound Team"],
+            "fileSource" => "monarkMainMenu"
+
         ],
         10 => [
             "recipe" => "3.64 MB",
-            "Artist" => ["KAF"]
+            "Artist" => ["KAF"],
+            "fileSource" => "monarkOp"
         ],
         11 => [
             "recipe" => "4.34 MB",
-            "Artist" => ["CIEL"]
+            "Artist" => ["CIEL"],
+            "fileSource" => "monarkEd"
         ],
         12 => [
             "recipe" => "5.17 MB",
-            "Artist" => ["KOKO"]
+            "Artist" => ["KOKO"],
+            "fileSource" => "monarkGreed"
         ]
     ];
 
